@@ -19,3 +19,4 @@ Route::get('/', function () {
 Route::get('/absen-malahing', function () {
     return view('form.index');
 });
+Route::post('/absen-malahing', 'AttendanceController@store')->name('absen.store');
