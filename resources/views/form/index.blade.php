@@ -21,7 +21,7 @@
         <div class="website-logo">
             <a href="/absen-malahing">
                 <div class="logo" style="">
-                    <img src="{{ asset('img/malahing.png') }}" alt="">
+                    <img src="{{asset(env('PUBLIC_ASSETS').'img/malahing.png')}}" alt="">
                 </div>
             </a>
         </div>
