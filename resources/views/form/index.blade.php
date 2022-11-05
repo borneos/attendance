@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buku Tamu Malahing</title>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{{asset(env('PUBLIC_ASSETS').'css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css"
         integrity="sha512-3M00D/rn8n+2ZVXBO9Hib0GKNpkm8MSUU/e2VNthDyBYxKWG+BftNYYcuEjXlyrSO637tidzMBXfE7sQm0INUg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" type="text/css" href="css/iofrm-style.css">
-    <link rel="stylesheet" type="text/css" href="css/app.css">
-    <link rel="stylesheet" type="text/css" href="css/iofrm-theme18.css">
+    <link rel="stylesheet" type="text/css" href="{{asset(env('PUBLIC_ASSETS').'css/iofrm-style.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset(env('PUBLIC_ASSETS').'css/app.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset(env('PUBLIC_ASSETS').'css/iofrm-theme18.css')}}">
 </head>
 
 <body
@@ -78,10 +78,10 @@
         </div>
     </div>
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="{{asset(env('PUBLIC_ASSETS').'js/jquery.min.js')}}"></script>
+    <script src="{{asset(env('PUBLIC_ASSETS').'js/popper.min.js')}}"></script>
+    <script src="{{asset(env('PUBLIC_ASSETS').'js/bootstrap.min.js')}}"></script>
+    <script src="{{asset(env('PUBLIC_ASSETS').'js/main.js')}}"></script>
     <script>
         if (window.history.replaceState) {
             window.history.replaceState(null, null, window.location.href);
