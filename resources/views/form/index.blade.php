@@ -40,8 +40,8 @@
                             <textarea id="input" name="address" placeholder="Alamat Asal" class="form-control"></textarea>
                             <input id="input" class="form-control" type="number" name="whatsapp"
                                 placeholder="Nomor Whatsapp" min="1" required>
-                            <input id="input" class="form-control" type="text" name="instagram"
-                                placeholder="Instagram">
+                            <!-- <input id="input" class="form-control" type="text" name="instagram"
+                                placeholder="Instagram"> -->
                             <input id="input" class="form-control" type="text" name="institution"
                                 placeholder="Asal Instansi / Lembaga">
                             <input id="input" class="form-control" type="number" name="time_visit"
