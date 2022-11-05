@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="{{asset(env('PUBLIC_ASSETS').'css/iofrm-style.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset(env('PUBLIC_ASSETS').'css/app.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset(env('PUBLIC_ASSETS').'css/iofrm-theme18.css')}}">
+    <script src="{{env('PUBLIC_ASSETS').'vendor/sweetalert/sweetalert.all.js'}}"></script>
 </head>
 
 <body
@@ -82,7 +83,6 @@
     <script src="{{asset(env('PUBLIC_ASSETS').'js/popper.min.js')}}"></script>
     <script src="{{asset(env('PUBLIC_ASSETS').'js/bootstrap.min.js')}}"></script>
     <script src="{{asset(env('PUBLIC_ASSETS').'js/main.js')}}"></script>
-    <script src="{{env('PUBLIC_ASSETS').'vendor/sweetalert/sweetalert.all.js'}}"></script>
     <script>
         if (window.history.replaceState) {
             window.history.replaceState(null, null, window.location.href);
