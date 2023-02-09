@@ -14,5 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
+Route::get('/absen-malahing', function () {
+    return view('form.index');
+});
+Route::post('/absen-malahing', 'AttendanceController@store')->name('absen.store');
