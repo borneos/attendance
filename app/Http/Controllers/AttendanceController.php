@@ -12,14 +12,15 @@ class AttendanceController extends Controller
     {
         Attendance::create([
             'event'       => $request->event,
-            'name'        => $request->name,
+            'name'        => $request->fullname,
             'address'     => $request->address,
-            'whatsapp'    => $request->whatsapp,
+            'whatsapp'    => $request->whatsapp_number,
             'instagram'   => $request->instagram,
-            'institution' => $request->institution,
+            'institute'   => $request->institute,
+            'institution' => $request->institute_name,
             'time_visit'  => $request->time_visit,
-            'reason'      => $request->reason,
-            'info'        => $request->info,
+            'reason'      => $request->reason_to_visit,
+            'info'        => $request->user_info_source_malahing,
         ]);
         Alert::success('Success', 'Data Saved Successfully');
         return view('form.index');

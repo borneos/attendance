@@ -7,7 +7,11 @@ module.exports = {
         "./resources/**/*.vue",
     ],
     theme: {
-        extend: {},
+        extend: {
+            fontFamily: {
+                inter: ["Inter", "Roboto"],
+            },
+        },
     },
     plugins: [require("@tailwindcss/forms")],
 };
