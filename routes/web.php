@@ -18,5 +18,5 @@ Route::get('/', function () {
 });
 Route::get('/tamu', function () {
     return view('form.index');
-});
+})->name('attendance');
 Route::post('/tamu', 'AttendanceController@store')->name('absen.store');
