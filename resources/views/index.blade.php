@@ -30,7 +30,6 @@
         .swiper-slide img {
             display: block;
             width: 100%;
-            height: 600px;
             object-fit: cover;
         }
         .swiper-slide {
@@ -49,39 +48,30 @@
 </head>
 
 <body>
-    <div class="relative bg-cyan-500">
-        <div class="container mx-auto px-6">
-            <div class="flex items-center justify-between border-gray-100 py-6 md:justify-start md:space-x-10">
-            <div class="flex justify-start lg:w-0 lg:flex-1">
-                <a href="#">
-                <span class="sr-only">Your Company</span>
-                <img src={{ asset(env('PUBLIC_ASSETS').'img/malahing.png') }} alt="Better Living in Malahing" width="100" height="100">
-                </a>
-            </div>
-            <div class="-my-2 -mr-2 md:hidden">
-                <button type="button" class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-expanded="false">
-                <span class="sr-only">Open menu</span>
-                <!-- Heroicon name: outline/bars-3 -->
-                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                </svg>
-                </button>
-            </div>
-            <div class="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
-                <a href={{ route('attendance') }} class="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700">Buku Tamu</a>
-            </div>
+    <div class="relative">
+        <div class="px-6 w-full shadow-lg">
+            <div class="flex items-center justify-between border-gray-100 py-4 md:justify-start md:space-x-10">
+                <div class="flex justify-start lg:w-100 lg:flex-1">
+                    <a href="#">
+                    <img style="width: 170px;" src="https://res.cloudinary.com/borneos-co/image/upload/v1676648237/visit-malahing/logo-visit-malahing_u8hn9v.webp" alt="Better Living in Malahing">
+                    <!-- <img src={{ asset(env('PUBLIC_ASSETS').'img/malahing.png') }} alt="Better Living in Malahing" width="100" height="100"> -->
+                    </a>
+                </div>
+                <div class="items-center justify-end md:flex md:flex-1 lg:w-0">
+                    <a href={{ route('attendance') }} class="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-teal-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-teal-700">Buku Tamu</a>        
+                </div>
             </div>
         </div>
     </div>
     <div class="my-8 swiper mySwiper">
         <div class="swiper-wrapper">
-            <div class="swiper-slide">
+            <div class="swiper-slide max-h-80">
                 <img src="https://res.cloudinary.com/borneos-co/image/upload/v1676539405/malahing/IMG_0850_zwvcmx.webp" alt="">
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide max-h-80">
                <img src="https://res.cloudinary.com/borneos-co/image/upload/v1676539555/malahing/DSC04663_n8hjjv.webp" alt="">
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide max-h-80">
                 <img src="https://res.cloudinary.com/borneos-co/image/upload/v1676539403/malahing/DSC07821_kkk7qd.webp" alt="">
             </div>
         </div>

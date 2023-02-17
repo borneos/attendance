@@ -46,6 +46,7 @@
                                 <option value="Komunitas">Komunitas</option>
                                 <option value="Organisasi">Organisasi</option>
                                 <option value="Pendidikan">Pendidikan</option>
+                                <option value="Lainnya">Lainnya</option>
                             </select>
                         </div>
                         <div class="flex flex-col gap-3">
@@ -55,7 +56,7 @@
                     </div>
                     <div class="flex flex-col items-start gap-3 my-4">
                         <label for="time_visit" class="font-bold text-md">Kunjungan ke Berapa?</label>
-                        <input type="number" class="form-input rounded w-[100%] p-3 border-gray-300" name="time_visit" id="time_visit" placeholder="33" required />
+                        <input type="number" class="form-input rounded w-[100%] p-3 border-gray-300" name="time_visit" id="time_visit" placeholder="1" required />
                     </div>
                     <div class="flex flex-col items-start gap-3 my-4">
                         <label for="reason_to_visit" class="font-bold text-md">Tujuan Kunjungan</label>
