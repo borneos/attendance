@@ -11,12 +11,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <script src="{{env('PUBLIC_ASSETS').'vendor/sweetalert/sweetalert.all.js'}}"></script>
+    <link rel="icon" type="image/x-icon" href={{ asset('img/favicon/favicon.ico') }}>
 </head>
 
 <body style="background-image: url(https://res.cloudinary.com/borneos-co/image/upload/v1667649082/images/bg-drone-malahing_sfhrqg.webp);background-position: center;background-repeat: no-repeat;background-size: cover;background-attachment: fixed;" class="max-sm:px-3 font-inter">
     @include('sweetalert::alert')
     <div class="flex flex-col justify-center items-center my-14 max-sm:mx-3">
-        <img src={{ asset(env('PUBLIC_ASSETS').'img/malahing.png') }} alt="Better Living in Malahing" width="200" height="100">
+        <a href={{ url('/') }}>
+            <img src={{ asset(env('PUBLIC_ASSETS').'img/malahing.png') }} alt="Better Living in Malahing" width="200" height="100">
+        </a>
         <div class="bg-stone-50 rounded-md my-12 text-center p-8 shadow-md border-none">
             <h1 class="font-bold text-3xl max-sm:text-2xl">Buku Tamu Malahing</h1>
             <p class="mt-3">Silahkan isi buku tamu kunjungan ke Malahing</p>
@@ -66,7 +69,7 @@
                         <label for="user_info_source_malahing" class="font-bold text-md">Dapat Info Malahing Dari Mana?</label>
                         <textarea class="form-input rounded w-[100%] p-3 border-gray-300" name="user_info_source_malahing" id="user_info_source_malahing" placeholder="Dari Kantor, Dari Teman, Dari Instagram, Dari Facebook" required></textarea>
                     </div>
-                    <button type="submit" class="bg-cyan-700 text-white p-4 w-full my-4">Simpan Data</button>
+                    <button type="submit" class="bg-teal-600 text-white p-4 w-full my-4">Simpan Data</button>
                 </form>
                 <div class="my-3">
                     <div class="flex gap-3 justify-center">
