@@ -11,40 +11,7 @@
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
-    <style>
-        .swiper {
-            width: 100%;
-            height: 100%;
-        }
-
-        .swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            background: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: salmon;
-        }
-
-        .swiper-slide img {
-            display: block;
-            width: 100%;
-            object-fit: cover;
-        }
-        .swiper-slide {
-             width: 60%;
-        }
-
-        @media only screen and (max-width: 640px){
-             .swiper-slide img {
-                display: block;
-                width: 100%;
-                height: 150px;
-                object-fit: cover;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href={{ asset('css/style.css') }}>
 </head>
 
 <body>
@@ -58,20 +25,20 @@
                     </a>
                 </div>
                 <div class="items-center justify-end md:flex md:flex-1 lg:w-0">
-                    <a href={{ route('attendance') }} class="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-teal-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-teal-700">Buku Tamu</a>        
+                    <a href={{ route('attendance') }} class="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-teal-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-teal-700">Buku Tamu</a>
                 </div>
             </div>
         </div>
     </div>
     <div class="my-8 swiper mySwiper">
         <div class="swiper-wrapper">
-            <div class="swiper-slide max-h-80">
+            <div class="swiper-slide">
                 <img src="https://res.cloudinary.com/borneos-co/image/upload/v1676539405/malahing/IMG_0850_zwvcmx.webp" alt="">
             </div>
-            <div class="swiper-slide max-h-80">
+            <div class="swiper-slide">
                <img src="https://res.cloudinary.com/borneos-co/image/upload/v1676539555/malahing/DSC04663_n8hjjv.webp" alt="">
             </div>
-            <div class="swiper-slide max-h-80">
+            <div class="swiper-slide">
                 <img src="https://res.cloudinary.com/borneos-co/image/upload/v1676539403/malahing/DSC07821_kkk7qd.webp" alt="">
             </div>
         </div>
