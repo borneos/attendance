@@ -30,6 +30,13 @@
             </div>
         </div>
     </div>
+    <div class="container mx-auto pt-6">
+            <img 
+                class="mx-auto w-28 md:w-36" 
+                src="https://res.cloudinary.com/borneos-co/image/upload/v1676648251/visit-malahing/logo-better-living-malahing_j2ibkw.webp" 
+                alt="Better Living in Malahing" 
+            >
+    </div>
     <div class="my-8 swiper mySwiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
